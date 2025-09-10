@@ -16,6 +16,8 @@ public class TypoFixerTest {
         String output = TypoFixer.fixTypos("teh quick red fox");
         assertEquals("the quick red fox", output);
 
+        output = TypoFixer.fixTypos("here, tehre, and everywhere");
+        assertEquals("here, there, and everywhere", output);
     }
 
     @Test

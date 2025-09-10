@@ -18,7 +18,7 @@ public class TypoFixer {
             } else if (word.contains("Macaleseter")) {
                 output.add("Macalester");
             } else if (word.substring(0, 3).equals("teh")) {
-                output.add("the");
+                output.add("the" + word.substring(3));
             } else {
                 output.add(word);
             }
